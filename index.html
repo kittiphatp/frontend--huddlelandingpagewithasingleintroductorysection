@@ -20,6 +20,7 @@
     main {color: white; font-family: Arial, Helvetica, sans-serif; line-height: 1.5; display: inline-block; vertical-align: top; margin-left: 55px;}
     h1 {font-size: 32px; font-weight: 700; font-family: 'Poppins', sans-serif;}
     article {margin-bottom: 29px; font-family: 'Open Sans';}
+    .article-mobile {display: none;}
 
     button {width: 198px; height: 57px; font-family: 'Open Sans'; font-size: 14px; color: #74679d; border-style: none; border-radius: 30px;}
 
@@ -28,6 +29,19 @@
 
     .attribution { font-size: 11px; text-align: center; color: white;}
     .attribution a { color: white; }
+
+    @media only screen and (max-width: 375px) {
+      body {width: 100%;}
+      header, aside {margin: 20px;}
+      aside > img {width: 80%;}
+      main {display: block; text-align: center; margin: 20px auto 20px auto;}
+      h1 { font-size: 20px;}
+      article {display: none;}
+      .article-mobile { display: block; font-size: 14px; font-family: 'Open Sans'; margin-bottom: 29px;}
+      .social {width: 100%; display:flex; justify-content: center; margin-top: 100px;}
+      i {padding: 5px;}
+    }
+
   </style>
 </head>
 <body>
@@ -49,6 +63,13 @@
       a voice, but so does your audience.Create connections with  <br>
       your users as you engage in genuine discussion.
     </article>
+    <div class="article-mobile">
+      Huddle re-imagines the way we build   <br>
+      communities. You have a voice, but so <br>
+      does your audience.Create connections <br>
+      with your users as you engage in      <br>
+      genuine discussion
+    </div>
     <button>Register</button>
   </main>
 
